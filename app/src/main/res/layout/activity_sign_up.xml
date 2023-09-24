@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySignUp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EC96A4">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#EC96A4"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_using_a_smartphone"
+            android:elevation="10dp"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/textfield"
+            android:layout_marginTop="10dp"
+            android:layout_marginVertical="10dp"
+            android:hint="UserName"
+            android:paddingStart="10dp"
+            android:elevation="10dp" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/textfield"
+            android:layout_marginVertical="10dp"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:elevation="10dp"/>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/textfield"
+            android:layout_marginVertical="10dp"
+            android:hint="Password"
+            android:paddingStart="10dp"
+            android:elevation="10dp"
+            />
+
+        <TextView
+            android:id="@+id/AlreadyHaveAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have Account"
+            android:layout_gravity="right"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Signup"
+            app:cornerRadius="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#F1F3CE"
+            android:elevation="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <Button
+                android:id="@+id/btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/google_icon"
+                android:padding="15dp"
+                android:text="google"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp"
+                android:textSize="12sp"
+                android:elevation="100dp"
+                />
+
+            <Button
+                android:id="@+id/btn_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/facebook_icon"
+                android:padding="15dp"
+                android:text="Facebook"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp"
+                android:textSize="12sp"
+                android:elevation="100dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signup_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup With Phone"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
